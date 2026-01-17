@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "编译 raylib（无控制台）",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I", "D:/Code/raylib/include",
+                "-L", "D:/Code/raylib/lib",
+                "-lraylib", "-lopengl32", "-lgdi32", "-lwinmm",
+                "-Wl,--subsystem,windows"
+            ],
+            "group": "build",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
+                }
+            }
+        }
+    ]
+}
