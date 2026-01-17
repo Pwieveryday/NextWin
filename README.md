@@ -1,3 +1,3 @@
 # NextWin
-所以设置我的电脑更方便。(w ^ ^)
+So it is convenient.
 And I can learn about the Github Flow.awa
